@@ -12,6 +12,10 @@ public class PrincipalDetails implements UserDetails{
 	
 	private User user;
 	
+	public PrincipalDetails() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public PrincipalDetails(User user) {
 		this.user = user;
 	}
@@ -31,7 +35,7 @@ public class PrincipalDetails implements UserDetails{
 
 	@Override
 	public String getUsername() {
-		return user.getName();
+		return user.getUsername();
 	}
 
 	@Override
